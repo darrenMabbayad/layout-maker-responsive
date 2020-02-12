@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 5vh;
+    width: 100%;
+    margin: 0.3em 0;
+
+    p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer p {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer p {
+        font-size: 0.65em;
+    }
+}

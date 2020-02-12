@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin flexColumnCenter($spacing) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $spacing;
+    align-items: center;
+}
+
+@mixin flexRowCenter($spacing) {
+    display: flex;
+    justify-content: $spacing;
+    align-items: center;
+}
+
+@mixin createShadow {
+    background: white;
+    border: solid rgba($color: $grey, $alpha: 0.2) 1px;
+    box-shadow: 2px 4px 10px 2px rgba($color: black, $alpha: 0.2);
+}

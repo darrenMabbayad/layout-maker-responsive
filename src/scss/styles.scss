@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Monsterrat|Roboto|Fredoka+One|Ubuntu:400,700&display=swap');
+@import './config';
+@import './variables';
+@import './component-scss/header';
+@import './component-scss/footer';
+@import './component-scss/selector';
+@import './component-scss/tools';
+@import './component-scss/screen';
+@import './component-scss/layout-grid';
+
+body {
+    font-family: $ubuntu;
+    background: $offwhite;
+}
+
+button {
+    font-family: $ubuntu;
+}

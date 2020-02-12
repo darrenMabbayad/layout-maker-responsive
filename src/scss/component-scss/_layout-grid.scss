@@ -1,0 +1,83 @@
+.layout {
+    &-basic, &-blog, &-ecommerce, &-portfolio, &-grid {
+        width: 90%;
+        height: 90%;
+    }
+
+    &-basic {
+        display: grid;
+        gap: 1em;
+        grid-template-areas: 
+        'header header header header header'
+        'sidebar main main main main'
+        'sidebar section1 section1 section1 section1'
+        'footer footer footer footer footer';
+    }
+
+    &-blog {
+        display: grid;
+        gap: 1em;
+        grid-template-areas:
+        'header header header header header'
+        'sidebar main main main main'
+        'sidebar main main main main'
+        'sidebar section1 section1 section1 box1'
+        'sidebar section1 section1 section1 box1'
+        'sidebar section2 section2 section2 box2'
+        'sidebar section2 section2 section2 box2'
+        'footer footer footer footer footer';
+    }
+
+    &-ecommerce {
+        display: grid;
+        gap: 1em;
+        grid-template-areas:
+        'header header header header header'
+        'sidebar box1 section1 section1 section1'
+        'sidebar box2 section2 section2 section2'
+        'sidebar box3 section3 section3 section3'
+        'sidebar box4 section4 section4 section4'
+        'sidebar box5 section5 section5 section5';
+    }
+
+    &-portfolio {
+        display: grid;
+        gap: 1em;
+        grid-template-areas:
+        'header header header header header'
+        'main main main main main'
+        'main main main main main'
+        'main main main main main'
+        'section1 section1 box1 section2 section2'
+        'section1 section1 box1 section2 section2'
+        'footer footer footer footer footer';
+    }
+
+    &-grid {
+        display: grid;
+        gap: 1em;
+        grid-template-areas:
+        'main main main box1 box1 box2'
+        'main main main box1 box1 box2'
+        'main main main section1 section1 section1'
+        'section2 section2 section2 section3 section3 section3'
+        'section2 section2 section2 box3 box4 box5';
+    }
+}
+
+.screen {
+    &-header {grid-area: header;}
+    &-footer {grid-area: footer;}
+    &-main {grid-area: main;}
+    &-sidebar {grid-area: sidebar;}
+    &-section1 {grid-area: section1;}
+    &-section2 {grid-area: section2;}
+    &-section3 {grid-area: section3;}
+    &-section4 {grid-area: section4;}
+    &-section5 {grid-area: section5;}
+    &-box1 {grid-area: box1;}
+    &-box2 {grid-area: box2;}
+    &-box3 {grid-area: box3;}
+    &-box4 {grid-area: box4;}
+    &-box5 {grid-area: box5;}
+}

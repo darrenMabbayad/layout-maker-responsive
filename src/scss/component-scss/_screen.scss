@@ -1,0 +1,22 @@
+.screen {
+    &-mobile {
+        height: 100%;
+        width: 90%;
+        background: white;
+        @include createShadow();
+        @include flexRowCenter(space-around);
+    }
+
+    &-non-mobile {
+        height: 100%;
+        width: 55vw;
+        background: white;
+        @include createShadow();
+        @include flexRowCenter(space-around);
+    }
+
+    &-font {
+        pointer-events: none;
+        font-weight: 700;
+    }
+}

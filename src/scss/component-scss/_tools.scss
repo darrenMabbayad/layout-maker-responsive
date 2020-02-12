@@ -1,0 +1,113 @@
+.tools {
+    &-mobile {
+        height: 18vh;
+        width: 90vw;
+        background: white;
+        margin-top: 1em;
+        @include createShadow();
+        @include flexColumnCenter(center);
+
+        &-btns{
+            margin: 1em auto;
+            width: 95%;
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(5.5rem, 1fr));
+        }
+    }
+
+    &-non-mobile {
+        height: 65vh;
+        width: 20vw;
+        background: white;
+        margin-left: 1em;
+        @include createShadow();
+        @include flexColumnCenter(space-around);
+
+        &-btns {
+            margin: 1em auto;
+            width: 85%;
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+        }
+    }
+}
+
+.huepicker {
+    margin-top: 1rem;
+}
+
+.font-btn {
+    background: none;
+    border: solid $blue 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 0.5em;
+    color: $blue;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.fill-btn, .border-btn {
+    background: none;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 0.5em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ubuntu {
+    font-family: $ubuntu;
+    font-weight: 700;
+}
+
+.roboto {
+    font-family: $roboto;
+    font-weight: 700;
+}
+
+.montserrat {
+    font-family: $montserrat;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 960px) {
+    .tools-non-mobile {
+        width: 25vw;
+    }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .tools-non-mobile {
+        width: 20vw;
+    }
+}
+
+@media screen and (min-width: 1601px){
+    .tools-non-mobile {
+        width: 17vw;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .tools-mobile {
+        height: 20vh;
+    }
+
+    .font-btn, .fill-btn, .border-btn {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tools-mobile {
+        height: 25vh;
+    }
+}
