@@ -1,7 +1,6 @@
 import React from 'react'
 
 function Section({border, label, color, changeColor}) {
-
     return (
         <button 
             className={`screen-${label}`}
