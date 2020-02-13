@@ -1,4 +1,4 @@
-A demo of this can be used at https://codesandbox.io/s/layout-app-9fvwt
+A demo of this can be used at https://codesandbox.io/s/github/darrenMabbayad/layout-maker-responsive
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
