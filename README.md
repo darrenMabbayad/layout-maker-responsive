@@ -1,3 +1,5 @@
+A demo of this can be used at https://codesandbox.io/s/simple-color-fill-app-nwz3s
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
