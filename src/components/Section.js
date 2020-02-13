@@ -1,6 +1,8 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import {Context} from '../utils/Context'
 
 function Section({border, label, color, changeColor}) {
+    const {font} = useContext(Context)
     return (
         <button 
             className={`screen-${label}`}
@@ -8,7 +10,7 @@ function Section({border, label, color, changeColor}) {
             id={label} name='section' 
             onClick={event => changeColor(event)}
         >
-            <p className='screen-font'>{label.charAt(0).toUpperCase() + label.slice(1)}</p>
+            <p className={`screen-font ${font}`}>{label.charAt(0).toUpperCase() + label.slice(1)}</p>
         </button>
     )
 }
