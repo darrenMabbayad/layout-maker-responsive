@@ -33,9 +33,9 @@ function Header() {
     }
 
     const tooltipMessages = {
-        one: 'Select a color then click the paint bucket and fill the section you wish to change.',
-        two: 'Select one of the six fonts and all the text will update to that font.',
-        three: 'Select one of the six layouts that most interests you.'
+        one: 'Select a color then click the fill button. Then click the section you want to change.',
+        two: 'Select one of the three fonts and all the text will update to that font.',
+        three: 'Select one of the five layouts that most interests you.'
     }
 
     return (
