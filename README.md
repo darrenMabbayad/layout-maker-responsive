@@ -6,7 +6,7 @@ This is my first project playing with React. I utilize the Context API to detect
 
 In terms of styling, everything is using custom CSS for me to practice using CSS grid, flexbox, mixins, variables, etc. 
 
-**Practiced Using**
+**Practiced:**
 - React hooks
 - Creating custom hooks
 - React portals
